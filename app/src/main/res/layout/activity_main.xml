@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kopia_kotlin"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/edit_text_city"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#EDC4D9"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGetWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGetWeather"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#C35685"
+        android:text="@string/button_get_weather"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonHumidity"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLoc"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCity" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="189dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoc" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPressure"
+        android:layout_width="107dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:checked="false"
+        android:text="@string/button_Pressure"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonTempMin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonHumidity" />
+
+    <RadioButton
+        android:id="@+id/radioButtonHumidity"
+        android:layout_width="117dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/button_Hum"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonPressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGetWeather" />
+
+    <RadioButton
+        android:id="@+id/radioButtonTempMin"
+        android:layout_width="162dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/button_TempMin"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonTempMax"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonPressure" />
+
+    <RadioButton
+        android:id="@+id/radioButtonTempMax"
+        android:layout_width="168dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/button_TempMax"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonTempMin" />
+
+    <TextView
+        android:id="@+id/textViewTemp"
+        android:layout_width="139dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="135dp"
+        android:textAlignment="center"
+        android:textColor="#EDC4D9"
+        android:textColorHint="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonTempMax" />
+
+    <TextView
+        android:id="@+id/textViewDesc"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:textAlignment="center"
+        android:textColor="#EDC4D9"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemp" />
+
+    <Button
+        android:id="@+id/buttonLoc"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#C35685"
+        android:text="@string/loc"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonGetWeather"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCity" />
+
+    <TextView
+        android:id="@+id/textViewFL"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="#EDC4D9"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDesc" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLocation"
+        android:layout_width="104dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFL"
+        app:srcCompat="@drawable/loc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

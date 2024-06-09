@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="app_title">Weather</string>
+    <string name="edit_text_city">Enter city name</string>
+    <string name="button_get_weather">Get weather</string>
+    <string name="temperature" />
+    <string name="humidity" />
+    <string name="description" />
+    <string name="feelsLike" />
+    <string name="button_Pressure">Pressure</string>
+    <string name="button_Hum">Humidity</string>
+    <string name="button_TempMin">Min temperature</string>
+    <string name="button_TempMax">Max temperature</string>
+    <string name="pressure" />
+    <string name="Tmin">\n</string>
+    <string name="Tmax" />
+    <string name="maindesc" />
+    <string name="loc">Forecast</string>
+    <string name="clear">Uncheck</string>
+    <string name="display_button">Display on Google Maps</string>
+    <string name="buttonG">Get gyroscope data</string>
+    <string name="buttonAddons">Get more data</string>
+    <string name="buttonF">Get forecast</string>
+</resources>
