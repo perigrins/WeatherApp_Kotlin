@@ -11,11 +11,13 @@ Getting current weather and forecast based on user's location/choosen city:
 Additional gyroscope and magnetometr usage.
 
 ### 1st screen
-![1st](https://github.com/user-attachments/assets/3a276706-91cc-4544-bba1-5a8ee1045385)
+
+![1st]()
 
 ### 2nd screen
-![image](https://github.com/user-attachments/assets/df0eb362-a437-412c-809f-21ddab01647a)
 
+![2nd]()
 
 ### 3rd screen
-![image](https://github.com/user-attachments/assets/621bc71b-5358-43ff-9fe8-19aead27a8ca)
+
+![3rd]()
