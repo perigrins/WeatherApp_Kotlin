@@ -8,4 +8,4 @@ Getting current weather and forecast based on user's location/choosen city:
 6. pressure
 7. short description
    
-Additional gyroscope and magnetometr usage.
+Additional gyroscope and magnetometer usage.
