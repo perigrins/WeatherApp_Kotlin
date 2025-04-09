@@ -9,15 +9,3 @@ Getting current weather and forecast based on user's location/choosen city:
 7. short description
    
 Additional gyroscope and magnetometr usage.
-
-### 1st screen
-
-![1st]()
-
-### 2nd screen
-
-![2nd]()
-
-### 3rd screen
-
-![3rd]()
